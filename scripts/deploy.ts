@@ -6,7 +6,7 @@ async function main() {
   await simpleContract.deployed();
   console.log("contract address", simpleContract.address);
 
-  const transactionResponse = await simpleContract.store(1);
+  const transactionResponse = await simpleContract.store(12321);
   const transactionRecipt = await transactionResponse.wait();
   // console.log(transactionRecipt);
   // console.log(transactionRecipt.events[0].args.oldNumber.toString());
